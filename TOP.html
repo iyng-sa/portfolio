@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>SAYAKA IYANAGA | Portfolio</title>
+<meta name="description" content="WEBデザイナー 彌永沙也加のポートフォリオサイトです。" />
+<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link rel='stylesheet' href='./style.css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<!-- スムーズスクロール部分の記述 -->
+<script>
+	$(function(){
+			// #で始まるアンカーをクリックした場合に処理
+		$('a[href^=#]').click(function() {
+			// スクロールの速度
+			var speed = 800; // ミリ秒
+			// アンカーの値取得
+			var href= $(this).attr("href");
+			// 移動先を取得
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			// 移動先を数値で取得
+			var position = target.offset().top;
+			// スムーススクロール
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
+			return false;
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<header>
+	<div class="container between">
+		<a href="#" class="title">SAYAKA IYANAGA</a>
+		<nav>
+			<ul class="flex end">
+				<li><a href="#" class="nav">-TOP</a></li>
+				<li><a href="#about" class="nav">-ABOUT</a></li>
+				<li><a href="#works" class="nav">-WORKS</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="top_pic">
+<section class="container">
+	<article>
+		<div class="top_description">
+			<p>SAYAKA IYANAGA</p>
+			<p class="right_gray">-WEB DESIGN <br>-UI DESIGN <br>-GRAFIC DESIGN</p>
+		</div>
+	</article>
+</section>
+</div>
+
+<section  id="works" class="works container">
+	<article>
+		<h2 class="section_title">WORKS</h2>
+		<div class="section_sub_title">
+			<h3>Baseconnect Inc.</h3>
+			<p>2019/6 - 2020/現在</p>
+		</div>
+		<p class="works_script">2019年4月からBaseconnect株式会社のデザインBootcampに参加後、2019年6月よりフルタイムインターンとしてUIデザイナー/コーダーとしてコミット。</br>
+			法人営業を支援する企業情報データベース「Baseconnect LIST 」や社内管理システムSales Adminのデザイン改善、サーチキット脱却プロジェクト等に参加。</br>
+			2019年11月に「Baseconnect LIST」は「Musubu」にリニューアルリリース(<a href="https://prtimes.jp/main/html/rd/p/000000008.000030679.html">https://prtimes.jp/main/html/rd/p/000000008.000030679.html</a>)。
+		</p>
+		<ul class="mt-60">
+				<li>
+						<a href="#">
+							<img src="img/musubu_list.png"/>
+						</a>
+						<div class="script">
+								<h4>Baseconnect LIST(MUSUBU)</h4>
+								<p>UIデザイン・コーディング</p>
+						</div>
+				</li>
+				<li>
+						<a href="#">
+							<img src="img/musubu_list.png"/>
+						</a>
+						<div class="script">
+								<h4>Sales Admin(社内管理システム)</h4>
+								<p>UIデザイン・コーディング</p>
+						</div>
+				</li>
+				<li>
+						<a href="#">
+							<img src="img/musubu_list.png"/>
+						</a>
+						<div class="script">
+								<h4>MUSUBU LP(Q&A)</h4>
+								<p>UIデザイン</p>
+						</div>
+				</li>
+				<li>
+						<a href="#">
+							<img src="img/musubu_list.png"/>
+						</a>
+						<div class="script">
+								<h4>サーチキット脱却プロジェクト</h4>
+								<p>UIデザイン・コーディング</p>
+						</div>
+					</li>
+		</ul>
+	</article>
+	<div class="btn center">
+		<a href="./works.html" class="">
+			SHOW MORE<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+		</a>
+	</div>
+
+	<hr class="dashed"/>
+
+	<article>
+		<div class="section_sub_title">
+			<h3>G.O Holdings Inc.</h3>
+			<p>2018/12 - 2019/5</p>
+		</div>
+		<p class="works_script">様々な自社商品を開発しEC事業を展開する株式会社G.O Holdingsにてインハウスデザイナーとしてコミット。</br>
+			自社開発商品されたコスメブランドやガジェット系ブランド商品の販促物、LP制作を担当。
+		</p>
+			<ul class="mt-60">
+				<li>
+					<a href="#">
+						<img src="img/musubu_list.png"/>
+					</a>
+					<div class="script">
+							<h4>NALC 販促物</h4>
+							<p>DTPデザイン・入稿</p>
+					</div>
+				</li>
+				<li>
+						<a href="#">
+							<img src="img/musubu_list.png"/>
+						</a>
+						<div class="script">
+								<h4>SmartTap LP</h4>
+								<p>企画・デザイン・コーディング</p>
+						</div>
+				</li>
+			</ul>
+	</article>
+	<div class="btn center">
+		<a href="./works.html" class="">
+			SHOW MORE<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+		</a>
+	</div>
+
+	<hr class="dashed"/>
+
+	<article>
+		<div class="section_sub_title">
+			<h3>Others</h3>
+			<p>-</p>
+		</div>
+		<ul class="mt-60">
+				<li>
+					<a href="#">
+						<img src="img/musubu_list.png"/>
+					</a>
+					<div class="script">
+							<h4>Portfolio</h4>
+							<p>設計・UIデザイン・コーディング</p>
+					</div>
+				</li>
+<!-- 				<li>
+						<a href="#">
+							<img src="img/musubu_list.png"/>
+						</a>
+						<div class="script">
+								<h4>Baseconnect LIST</h4>
+								<p>UIデザイン・コーディング</p>
+						</div>
+				</li> -->
+			</ul>
+	</article>
+
+	<div class="btn center">
+		<a href="./works.html" class="">
+			SHOW MORE<i class="fa fa-angle-double-right" aria-hidden="true"></i>
+		</a>
+	</div>
+
+</section>
+
+<div class="skills">
+	<section class="container">
+		<article>
+			<h2 class="section_title">SKILLS</h2>
+			<div class="skill_list">
+
+				<div class="skill_card">
+					<img src="img/skills/html5.png"/>
+					<p>HTML5</p>
+				</div>
+				<div class="skill_card">
+					<img src="img/skills/css.png"/>
+					<p>CSS3</p>
+				</div>
+				<div class="skill_card">
+					<img src="img/skills/scss.png"/>
+					<p>Sass</p>
+				</div>
+				<div class="skill_card">
+					<img src="img/skills/react.png"/>
+					<p>React.js</p>
+				</div>
+
+				<div class="skill_card">
+						<img src="img/skills/ai.png"/>
+						<p>Illustrator</p>
+				</div>
+				<div class="skill_card">
+						<img src="img/skills/sketch.png"/>
+						<p>Sketch</p>
+				</div>
+				<div class="skill_card">
+						<img src="img/skills/ps.png"/>
+						<p>Photoshop</p>
+				</div>
+				<div class="skill_card">
+					<img src="img/skills/js.png"/>
+					<p>JavaScript</p>
+				</div>
+
+				<div class="skill_card mb-80">
+					<img src="img/skills/github.png"/>
+					<p>Github</p>
+				</div>
+				<div class="skill_card mb-80">
+					<img src="img/skills/passion.png"/>
+					<p>Passion</p>
+				</div>
+
+			</div>
+
+		</article>
+	</section>
+</div>
+
+<div class="about_pic">
+	<section id="about" class="container">
+		<article>
+			<h2 class="section_title mt-40">ABOUT</h2>
+			<div class="profile">
+				<div class="my_name flex mb-30">
+					<span class="">彌永沙也加</span>
+					<p class="ml-20">いやなが さやか</p>
+				</div>
+				<h3>CV</h3>
+					1993年生まれ。<br/>
+					京都女子大学家政学部生活造形学科にてグラフィックデザイン、服飾を学ぶ。<br/>
+					在学中にDTPデザインのアルバイトやインターンに参加する。<br/><br/>
+					卒業後、京都の仏具店のインハウスデザイナーとして自社製品のカタログデザイン・企画を担当。<br/><br/>
+					2018年12月〜<br/>
+					株式会社GOホールディングスにてEC事業のインハウスデザイナーとして従事。<br/>
+					自社製品のLP制作や販促物のデザインを担当。<br/><br/>
+					コーディングを勉強したいという思いからBaseconnect株式会社のBootcampに参加。<br/><br/>
+					2018年6月〜現在<br/>
+					Baseconnect株式会社のフルタイムインターンとしてUIデザイナー・コーダーとして従事。<br/>
+				<div class="profile_others flex">
+					<div class="mb-20 mt-60">
+						<h4>MY HOBBY & FAVORITE</h4>
+						<p>
+							-音楽/映画鑑賞<br/>
+							-絵を描く<br/>
+							-渋めの喫茶店<br/>
+							-友人と会う<br/>
+						</p>
+					</div>
+					<div class="mb-20 mt-60 ml-10p">
+						<h4>今後やりたいことなど</h4>
+						<p>
+							-React.jsの勉強<br/>
+							-UI/UXデザインの勉強・デザイン<br/>
+						</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</section>
+</div>
+
+<footer>
+	<div class="container">
+		<h1>SAYAKA IYANAGA</h1>
+		<p class="mt-10 mb-20">© 2019 SAYAKA IYANAGA Allright Reserved.</p>
+	</div>
+</footer>
+
+</body>
+</html>

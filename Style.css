@@ -1,0 +1,478 @@
+@charset "UTF-8";
+body {
+  font-family: "Alata", "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  font-size: 14px;
+  color: #16161D;
+}
+
+body li {
+  list-style: none;
+}
+
+body a {
+  text-decoration: none;
+}
+
+.bold_ja {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+  font-weight: 700;
+}
+
+.bold_en {
+  font-family: "Alata", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 64px;
+  -ms-flex: 1 0 auto;
+  -webkit-box-flex: 1;
+          flex: 1 0 auto;
+}
+
+.dashed {
+  border-top: dashed 1px #a33fff;
+  margin: 100px 35px;
+}
+
+.dashed_60 {
+  border-top: dashed 1px #a33fff;
+  margin: 60px 35px;
+}
+
+.breadcrumb {
+  padding: 80px 0 20px;
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*横に並ぶように*/
+  width: 100%;
+  z-index: 2;
+}
+
+.breadcrumb li {
+  list-style: none;
+}
+
+.breadcrumb li::after {
+  /* >を表示*/
+  font-family: FontAwesome;
+  content: '\f105';
+  padding: 0 3px;
+  color: #626265;
+}
+
+.breadcrumb li:last-child::after {
+  content: '';
+}
+
+.breadcrumb li a {
+  text-decoration: none;
+  color: #a33fff;
+  /*色*/
+}
+
+.breadcrumb li a:hover {
+  text-decoration: underline;
+}
+
+header {
+  font-size: 20px;
+  padding: 20px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+header .title {
+  color: #16161D;
+}
+
+header .title:hover {
+  color: #a33fff;
+}
+
+header .nav {
+  margin: 10px;
+  color: #a0a0a0;
+  -webkit-transition: border .3s,color .3s;
+  transition: border .3s,color .3s;
+  border-bottom: 3px solid transparent;
+}
+
+header .nav:hover {
+  border-bottom-color: #a33fff;
+}
+
+header .nav:active {
+  border-bottom-color: #a33fff;
+  color: #a33fff;
+}
+
+.top_pic {
+  position: relative;
+  background-image: url(./img/top.jpg);
+  background-position: 90% 10%;
+  background-size: 55%;
+}
+
+.top_description {
+  font-size: 45px;
+  padding: 200px 40px 140px;
+  line-height: 1.5;
+}
+
+.section_title {
+  font-size: 35px;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.section_title::after {
+  display: block;
+  content: "";
+  margin: 15px 0 35px;
+  position: relative;
+  width: 50px;
+  border-bottom: 15px solid #a33fff;
+}
+
+.section_sub_title {
+  font-size: 25px;
+  margin: 30px 40px;
+  text-align: center;
+  line-height: 1;
+}
+
+.section_sub_title h3 {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, transparent), color-stop(20%, #a0a0a0));
+  background: linear-gradient(transparent 75%, #a0a0a0 20%);
+  padding-bottom: 30px;
+  display: inline-block;
+}
+
+.section_sub_title p {
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.works ul {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.works ul li a {
+  width: 100%;
+  height: 100%;
+}
+
+.works ul li a :hover {
+  opacity: 0.6;
+}
+
+.works ul li a img {
+  height: 300px;
+  width: 450px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+  border-radius: 10px;
+  -webkit-box-shadow: 1px 0 10px -2px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 0 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+.works ul .script {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  border-left: 5px solid #a33fff;
+  padding-left: 10px;
+}
+
+.works ul .script h4 {
+  font-size: 20px;
+}
+
+.works ul .script p {
+  font-size: 14px;
+}
+
+.top_image {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/works/musubu_list.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.respectively_works, .works_script {
+  margin-bottom: 80px;
+  padding: 0 40px;
+}
+
+.respectively_works h2, .works_script h2 {
+  font-size: 35px;
+  border-left: 5px solid #a33fff;
+  padding-left: 10px;
+  margin: 40px 0;
+}
+
+.respectively_works h3, .works_script h3 {
+  color: #626265;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.respectively_works a, .works_script a {
+  text-decoration: underline;
+  color: #626265;
+}
+
+.respectively_works a:hover, .works_script a:hover {
+  color: #a33fff;
+}
+
+.skills {
+  background: whitesmoke;
+}
+
+.skill_list {
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.skill_list::after {
+  content: "";
+  width: 48%;
+}
+
+.skill_card {
+  width: 22%;
+  margin-bottom: 40px;
+  background: #fff;
+  border-radius: 8px;
+}
+
+.skill_card p {
+  margin-top: 25px;
+  text-align: center;
+  padding: 15px 0px;
+  border-top: 1px solid #f0f1f5;
+  font-size: 18px;
+}
+
+.skill_card img {
+  padding-top: 25px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.about_pic {
+  background-image: url(./img/about.jpg);
+  background-position: 95% bottom;
+  background-size: 42%;
+}
+
+.my_name {
+  vertical-align: bottom;
+}
+
+.my_name span {
+  font-size: 30px;
+}
+
+.my_name p {
+  padding-top: 12px;
+  font-size: 20px;
+}
+
+.profile {
+  text-align: left;
+  padding-left: 40px;
+  margin-bottom: 60px;
+}
+
+.profile h3 {
+  margin-bottom: 20px;
+  border-left: 5px solid #a0a0a0;
+  padding-left: 5px;
+}
+
+.profile h4 {
+  margin-bottom: 15px;
+  font-size: 14px;
+  border-left: #a33fff 5px solid;
+  display: inline-block;
+  padding-left: 5px;
+}
+
+footer {
+  background: #f3f3f3;
+  padding: 40px 0;
+  text-align: center;
+}
+
+footer h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: #a0a0a0;
+}
+
+footer p {
+  font-size: 12px;
+  color: #626265;
+}
+
+.btn {
+  margin-bottom: 60px;
+  margin-top: 40px;
+}
+
+.btn a {
+  background: #a33fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.btn a i {
+  font-size: 16px;
+  padding-left: 5px;
+}
+
+.btn :hover {
+  opacity: 0.8;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+}
+
+.mb-80 {
+  margin-bottom: 80px;
+}
+
+.ml-10p {
+  margin-left: 10%;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
+.mt-60 {
+  margin-top: 60px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mt-40 {
+  margin-top: 40px;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mt-10 {
+  margin-top: 10px;
+}
+
+.right_gray {
+  color: #a0a0a0;
+}
+
+.gray {
+  color: #626265;
+}
+
+.blue {
+  color: #a33fff;
+}
+/*# sourceMappingURL=Style.css.map */

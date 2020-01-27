@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>SAYAKA IYANAGA | Portfolio</title>
+<meta name="description" content="WEBデザイナー 彌永沙也加のポートフォリオサイトです。" />
+<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link rel='stylesheet' href='./style.css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<!-- スムーズスクロール部分の記述 -->
+<script>
+	$(function(){
+			// #で始まるアンカーをクリックした場合に処理
+		$('a[href^=#]').click(function() {
+			// スクロールの速度
+			var speed = 400; // ミリ秒
+			// アンカーの値取得
+			var href= $(this).attr("href");
+			// 移動先を取得
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			// 移動先を数値で取得
+			var position = target.offset().top;
+			// スムーススクロール
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
+			return false;
+		});
+	});
+</script>
+</head>
+
+<body>
+
+<header>
+	<div class="container between">
+		<a href="#" class="title">SAYAKA IYANAGA</a>
+		<nav>
+			<ul class="flex end">
+				<li><a href="./TOP.html" class="nav">-TOP</a></li>
+				<li><a href="./TOP.html#about" class="nav">-ABOUT</a></li>
+				<li><a href="./TOP.html#works" class="nav">-WORKS</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+<div class="container">
+		<ul class="breadcrumb">
+			<li itemscope="itemscope" itemtype="./TOP.html">
+				<a href="" itemprop="url">
+					TOP
+				</a>
+			</li>
+			<li itemscope="itemscope" itemtype="./works.html">
+				<a href="" itemprop="url">
+					WORKS
+				</a>
+			</li>
+			<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a>Baseconnect Inc.</a>
+			</li>
+			<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+				<span>MUSUBU LP</span>
+		</li>
+		</ul>
+	</div>
+
+<!-- <section class="">
+	<article class="container mb-60 mt-40">
+		<div class="section_sub_title">
+				<h3>Baseconnect Inc.</h3>
+			</div>
+		<div class="">
+		</div>
+	</article>
+</section> -->
+
+
+<div class="top_image">
+</div>
+
+<div class="respectively_works container">
+	<div class="container">
+		<h2>MUSUBU LP</h2>
+		<p>
+			「MUSUBU」のLP(ランディングページ)です。Musubuは情報収集やリスト作成、案件管理といった幅広い業務をサポートし、ユーザーと新しい顧客を結ぶ法人営業支援データベースです。
+			2019年11月にBaseconnect LISTはMUSUBに改名、リニューアルリリースされLPのデザインも一新されました。
+		</p>
+		<h3>URL</h3>
+		<a href="https://www.musubu.in">https://www.musubu.in</a>
+		<h3>役割</h3>
+		<p>UIデザイン・コーディング(Sketch/React.js/sass)</p>
+		<h3>主な担当箇所</h3>
+		<ur>
+			<li>・よくある質問</li>
+			<li>・ホバーボタンのデザイン/コーディング</li>
+			<li>・マージン調整/コーディング</li>
+		</ur>
+	</div>
+	<hr class="dashed_60"/>
+	<div class="container">
+		<h2 class="">よくある質問</h2>
+		<h3>役割</h3>
+		<p>UIデザイン(Sketch)</p>
+		<h4>before</h4>
+		<h4>after</h4>
+		<div>point1</div>
+		<p></p>
+		<div>point2</div>
+		<p></p>
+		<h3>URL</h3>
+		<a href="https://www.musubu.in/faq#category-1-question-1">https://www.musubu.in/faq#category-1-question-1</a>
+	</div>
+</div>
+
+<footer>
+	<div class="container">
+		<h1>SAYAKA IYANAGA</h1>
+		<p class="mt-10 mb-20">© 2019 SAYAKA IYANAGA Allright Reserved.</p>
+	</div>
+</footer>
+
+</body>
+</html>
