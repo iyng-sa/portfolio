@@ -184,7 +184,7 @@ header .nav:active {
 
 .works ul li a img {
   height: 300px;
-  width: 400px;
+  width: 450px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: all 0.1s ease;
