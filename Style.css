@@ -117,13 +117,13 @@ header .nav:active {
 .top_pic {
   position: relative;
   background-image: url(./img/top.jpg);
-  background-position: 90% 10%;
+  background-position: 95% 10%;
   background-size: 55%;
 }
 
 .top_description {
   font-size: 45px;
-  padding: 200px 40px 140px;
+  padding: 200px 0px 140px;
   line-height: 1.5;
 }
 
@@ -184,7 +184,7 @@ header .nav:active {
 
 .works ul li a img {
   height: 300px;
-  width: 450px;
+  width: 400px;
   -o-object-fit: contain;
      object-fit: contain;
   -webkit-transition: all 0.1s ease;
@@ -438,6 +438,10 @@ footer p {
 
 .ml-40 {
   margin-left: 40px;
+}
+
+.mr-40 {
+  margin-right: 40px;
 }
 
 .mb-30 {
