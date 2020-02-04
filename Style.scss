@@ -232,6 +232,11 @@ header{
     justify-content: center;
   }
 }
+@media screen and (max-width: 767px){
+  .skill_card {
+    width: 48%;
+  }
+}
 //about-----------------------//
 .about_pic {
   background-image: url(./img/about.jpg);
