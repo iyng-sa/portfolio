@@ -385,7 +385,8 @@ header .nav:active {
 
 .respectively_works a, .works_script a {
   text-decoration: underline;
-  color: #626265;
+  color: #16161D;
+  font-weight: bold;
 }
 
 .respectively_works a:hover, .works_script a:hover {
