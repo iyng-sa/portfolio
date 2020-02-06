@@ -35,6 +35,12 @@ body{
   border-top:dashed 1px #a33fff;
   margin:60px 0;
 }
+@media screen and (max-width: 767px) {
+  .dashed,.dashed_60{
+    border-top:dashed 1px #a33fff;
+    margin:80px 0;
+  }
+}
 //パンくずリスト-------------------------------//
 .breadcrumb {
   padding:60px 0 20px;
@@ -188,9 +194,20 @@ header{
     }
   }
   @media screen and (max-width: 767px) {
-    ul {
-      display: flex;
-      justify-content: center;
+    ul{
+      padding: 0;
+      a li {
+        width:300px;
+        height:200px;
+        img{
+          width:300px;
+          height:200px;
+        }
+      }
+      .script{
+        margin-top:20px;
+        margin-bottom:40px;
+      }
     }
   }
 }
@@ -299,6 +316,7 @@ header{
 @media screen and (max-width: 767px) {
   .respectively_works,.works_script{
     padding: 0;
+    margin-bottom: 20px;
   }
     img{
       width: 100%;
