@@ -220,6 +220,21 @@ header .nav:active {
   font-size: 14px;
 }
 
+@media screen and (max-width: 767px) {
+  .works ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .works ul li a img {
+    height: 200px;
+    width: 300px;
+  }
+}
+
 .top_image {
   position: relative;
   width: 100%;
@@ -334,6 +349,12 @@ header .nav:active {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -390,6 +411,12 @@ header .nav:active {
 }
 
 @media screen and (max-width: 767px) {
+  .container {
+    padding: 0;
+  }
+  .skill_list {
+    padding: 40px 20px;
+  }
   .skill_card {
     width: 48%;
   }

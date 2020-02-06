@@ -140,7 +140,7 @@ header{
     font-size: 14px;
   }
 }
-//works---------------//
+//index_works---------------//
 .works{
   ul {
     padding:0 40px;
@@ -175,8 +175,18 @@ header{
       }
     }
   }
+  @media screen and (max-width: 767px) {
+    ul {
+      display: flex;
+      justify-content: center;
+      li a img{
+        height:200px;
+        width:300px;
+      }
+    }
+  }
 }
-//respectively_works----------//
+//respectively_works top_image----------//
 .top_image{
   position: relative;
   width: 100%;
@@ -233,6 +243,7 @@ header{
   background-size: cover;
   background-position: center center;
 }
+//respectively_works--------------------//
 .respectively_works,.works_script{
   margin-bottom:80px;
   padding: 0 40px;
@@ -275,6 +286,8 @@ header{
       width: 100%;
       margin: 0;
       margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
     }
   }
 }
@@ -317,6 +330,12 @@ header{
   }
 }
 @media screen and (max-width: 767px){
+  .container{
+    padding: 0;
+  }
+  .skill_list{
+    padding: 40px 20px;
+  }
   .skill_card {
     width: 48%;
   }
