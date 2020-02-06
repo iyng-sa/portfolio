@@ -256,6 +256,33 @@ header .nav:active {
   background-position: center center;
 }
 
+.nalc_top {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/works/nalc.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.sky_top {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/works/sky.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+.mypage_top {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/works/mypage.png);
+  background-size: cover;
+  background-position: center center;
+}
+
 .respectively_works, .works_script {
   margin-bottom: 80px;
   padding: 0 40px;
