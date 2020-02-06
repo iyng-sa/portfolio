@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+<title>SAYAKA IYANAGA | Portfolio</title>
+<meta name="description" content="WEBデザイナー 彌永沙也加のポートフォリオサイトです。" />
+<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
+<link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+<link rel='stylesheet' href='./style.css'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+<link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<!-- スムーズスクロール部分の記述 -->
+<script>
+	$(function(){
+			// #で始まるアンカーをクリックした場合に処理
+		$('a[href^=#]').click(function() {
+			// スクロールの速度
+			var speed = 400; // ミリ秒
+			// アンカーの値取得
+			var href= $(this).attr("href");
+			// 移動先を取得
+			var target = $(href == "#" || href == "" ? 'html' : href);
+			// 移動先を数値で取得
+			var position = target.offset().top;
+			// スムーススクロール
+			$('body,html').animate({scrollTop:position}, speed, 'swing');
+			return false;
+		});
+	});
+</script>
+</head>
+
+<body>
+<div class="admin_top">
+	<header>
+		<div class="container between">
+			<a href="#" class="title">SAYAKA IYANAGA</a>
+			<nav>
+				<ul class="flex end">
+					<li><a href="./TOP.html" class="nav">-TOP</a></li>
+					<li><a href="./TOP.html#about" class="nav">-ABOUT</a></li>
+					<li><a href="./TOP.html#works" class="nav">-WORKS</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+		<ul class="breadcrumb">
+			<li itemscope="itemscope" itemtype="./TOP.html">
+				<a href="" itemprop="url">
+					TOP
+				</a>
+			</li>
+			<li itemscope="itemscope" itemtype="./works.html">
+				<a href="" itemprop="url">
+					WORKS
+				</a>
+			</li>
+			<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+					<a>Baseconnect Inc.</a>
+			</li>
+			<li itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+				<span>Sales Admin(社内管理システム)</span>
+			</li>
+		</ul>
+	</div>
+	<!-- <section class="">
+		<article class="container mb-60 mt-40">
+			<div class="section_sub_title">
+					<h3>Baseconnect Inc.</h3>
+				</div>
+			<div class="">
+			</div>
+		</article>
+	</section> -->
+</div>
+<section class="container">
+	<div class="respectively_works container">
+		<h2>Sales Admin(社内管理システム)</h2>
+		<p>Sales AdminはBaseconnectのMUSUBUの顧客情報などを管理するシステムです。
+			作成されてからほぼデザインを変えていませんでしたが機能の増加と共にデザインをリニューアル。社内のどの部署の方がみても顧客情報をより分かりやすく探せるようUIのリデザインとコーディングを担当しました。</p>
+		<h3>担当</h3>
+		<p>UIデザイン/コーディング（Sketch / React.js / SCSS）</p>
+		<hr class="dashed_60">
+
+		<h4>１. 企業アカウント一覧</h4>
+		<div class="center mt-40">
+
+			<div class="pic_frame">
+				<h5>Before</h5>
+				<img src="./img/works/admin/企業アカウント一覧_before.png">
+			</div>
+
+			<div class="pic_frame">
+				<h5>After</h5>
+				<img src="./img/works/admin/企業アカウント一覧_after.jpg">
+			</div>
+
+		</div>
+		<h3>課題</h3>
+		<h3>解決</h3>
+		<p></p>
+
+		<h4>２. 企業アカウント詳細</h4>
+		<div class="center mt-40">
+
+			<div class="pic_frame">
+				<h5>Before</h5>
+				<img src="./img/works/admin/企業アカウント詳細_before.png">
+			</div>
+
+			<div class="pic_frame">
+				<h5>After</h5>
+				<img src="./img/works/admin/企業アカウント詳細_after .jpg">
+			</div>
+
+		</div>
+		<h3>課題</h3>
+		<h3>解決</h3>
+		<p></p>
+
+		<h4>３. 削除確認アラート</h4>
+		<div class="center mt-40">
+
+			<div class="pic_frame">
+				<h5>Before</h5>
+				<img src="./img/works/admin/削除確認_before.png">
+			</div>
+
+			<div class="pic_frame">
+				<h5>After</h5>
+				<img src="./img/works/admin/削除確認_after.png">
+			</div>
+
+		</div>
+		<h3>課題</h3>
+		<p>
+			使用しているライブラリ(Ant.Desig)のコンポーネントをデザイン調整なしで使用しているため、
+			アイコン・文言・ボタンのUIに違和感がある。<br>
+		</p>
+		<h3>解決</h3>
+		<p>
+			・アイコンカラーを黄色から赤へ変更。アイコンを？から！のサークルアイコンに変更。<br>黄色の？マークでは登録者のデータが削除されるという危険性があまり訴えられていないと考えた。<br>
+			・削除実行のボタンを青から赤に変更。ボタンの文言を変更。<br>アイコンを追加しよりこのボタンを押すことで何が起こるのか視覚的に分かりやすくした。<br>
+			・削除ボタンのデザインが統一されていなかったのでユーザーが混乱しないようにbackground:グレー、フォントカラー：赤のデザインにすべて統一。<br>
+			・アラートモーダルの2文めの語尾がなくバグのような印象を受けるので語尾に「が削除されます」を追加。<br>
+		</p>
+</section>
+
+<footer>
+	<div class="container">
+		<h1>SAYAKA IYANAGA</h1>
+		<p class="mt-10 mb-20">© 2019 SAYAKA IYANAGA Allright Reserved.</p>
+	</div>
+</footer>
+
+</body>
+</html>

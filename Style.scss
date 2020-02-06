@@ -33,11 +33,11 @@ body{
 }
 .dashed_60{
   border-top:dashed 1px #a33fff;
-  margin:60px 35px;
+  margin:60px 0;
 }
 //パンくずリスト-------------------------------//
 .breadcrumb {
-  padding:80px 0 20px;
+  padding:60px 0 20px;
   margin-left:0;
   display:flex;/*横に並ぶように*/
   width:100%;
@@ -101,6 +101,15 @@ header{
   font-size:45px;
   padding: 200px 0px 140px;
   line-height: 1.5;
+}
+@media screen and (max-width: 767px) {
+  .top_pic{
+    padding-top: 20%;
+    background-size: 90%;
+  }
+  .top_description{
+    padding-top:85%;
+  }
 }
 //section-------------------------//
 .section_title{
@@ -176,9 +185,23 @@ header{
   background-size: cover;
   background-position: center center;
 }
+.admin_top{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-image: url(./img/works/admin.png);
+  background-size: cover;
+  background-position: center center;
+}
 .respectively_works,.works_script{
   margin-bottom:80px;
   padding: 0 40px;
+  img{
+    position: relative;
+    margin-top: 0;
+    margin:0 10px;
+    width: 90%;
+  }
   h2{
     font-size: 35px;
     border-left: 5px solid #a33fff;
@@ -190,6 +213,14 @@ header{
     margin-top: 20px;
     margin-bottom: 10px;
   }
+  h4{
+    font-size: 20px;
+    font-weight: bold;
+  }
+  h5{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
   a{
     text-decoration: underline;
     color:#626265;
@@ -197,6 +228,17 @@ header{
       color: #a33fff;
     }
   }
+  @media screen and (max-width: 767px) {
+    img{
+      width: 100%;
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
+}
+.pic_frame{
+  width: 100%;
+  height: 100%;
 }
 //skills----------------------//
 .skills{
@@ -243,6 +285,11 @@ header{
   background-repeat: no-repeat;
   background-position: 95% bottom;
   background-size: 42%;
+}
+@media screen and (max-width: 767px) {
+  .about_pic{
+    background-size: 80%;
+  }
 }
 .my_name{
   vertical-align: bottom;
@@ -377,4 +424,11 @@ footer{
 }
 .blue{
   color: #a33fff;
+}
+//img--------------------------------------------//
+.co1{
+  width:100%;
+}
+.co2{
+  width:45%;
 }
