@@ -93,12 +93,18 @@ header{
       border-bottom-color: #a33fff;
       color: #a33fff;
     }
-    @media screen and (max-width: 767px) {
-    margin: 0 0 0 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  header{
+    .container{
+      padding: 0 20px;
+    }
+    .nav{
+      margin: 0 0 0 20px;
     }
   }
 }
-
 //top-------------------------//
 .top_pic{
   position: relative;
