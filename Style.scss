@@ -109,6 +109,7 @@ header{
   }
   .top_description{
     padding-top:85%;
+    padding-left: 20px;
   }
 }
 //section-------------------------//
@@ -138,6 +139,11 @@ header{
   p{
     margin-top: 20px;
     font-size: 14px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .section_title{
+  padding: 30px 0 0;
   }
 }
 //index_works---------------//
@@ -179,10 +185,6 @@ header{
     ul {
       display: flex;
       justify-content: center;
-      li a img{
-        height:200px;
-        width:300px;
-      }
     }
   }
 }
@@ -243,6 +245,12 @@ header{
   background-size: cover;
   background-position: center center;
 }
+@media screen and (max-width: 767px) {
+  .mypage_image,.admin_top,.musubuLp_top,.list_top,
+  .nalc_top,.sky_top{
+    height: 350px;
+  }
+}
 //respectively_works--------------------//
 .respectively_works,.works_script{
   margin-bottom:80px;
@@ -281,7 +289,11 @@ header{
       color: #a33fff;
     }
   }
-  @media screen and (max-width: 767px) {
+}
+@media screen and (max-width: 767px) {
+  .works_script{
+    padding: 0;
+  }
     img{
       width: 100%;
       margin: 0;
@@ -289,7 +301,6 @@ header{
       display: flex;
       justify-content: center;
     }
-  }
 }
 .pic_frame{
   width: 100%;
@@ -323,18 +334,19 @@ header{
     font-size: 18px;
   }
   img{
-    padding-top: 25px;
-    margin: auto;
+    width: 100px;
+    height: 100px;
+    margin:  25px auto 0;
     display: flex;
     justify-content: center;
   }
 }
 @media screen and (max-width: 767px){
   .container{
-    padding: 0;
+    padding: 0 20px;
   }
   .skill_list{
-    padding: 40px 30px;
+    padding: 20px 0 0;
   }
   .skill_card {
     width: 48%;
@@ -346,11 +358,6 @@ header{
   background-repeat: no-repeat;
   background-position: 95% bottom;
   background-size: 42%;
-}
-@media screen and (max-width: 767px) {
-  .about_pic{
-    background-size: 80%;
-  }
 }
 .my_name{
   vertical-align: bottom;
@@ -377,6 +384,14 @@ margin-bottom: 60px;
     border-left: #a33fff 5px solid;
     display: inline-block;
     padding-left: 5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .about_pic{
+    background-size: 80%;
+  }
+  .profile{
+    padding-left:0;
   }
 }
 // footer---------------------//

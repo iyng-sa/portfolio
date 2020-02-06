@@ -135,6 +135,7 @@ header .nav:active {
   }
   .top_description {
     padding-top: 85%;
+    padding-left: 20px;
   }
 }
 
@@ -170,6 +171,12 @@ header .nav:active {
 .section_sub_title p {
   margin-top: 20px;
   font-size: 14px;
+}
+
+@media screen and (max-width: 767px) {
+  .section_title {
+    padding: 30px 0 0;
+  }
 }
 
 .works ul {
@@ -228,10 +235,6 @@ header .nav:active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  .works ul li a img {
-    height: 200px;
-    width: 300px;
   }
 }
 
@@ -298,6 +301,13 @@ header .nav:active {
   background-position: center center;
 }
 
+@media screen and (max-width: 767px) {
+  .mypage_image, .admin_top, .musubuLp_top, .list_top,
+  .nalc_top, .sky_top {
+    height: 350px;
+  }
+}
+
 .respectively_works, .works_script {
   margin-bottom: 80px;
   padding: 0 40px;
@@ -345,7 +355,10 @@ header .nav:active {
 }
 
 @media screen and (max-width: 767px) {
-  .respectively_works img, .works_script img {
+  .works_script {
+    padding: 0;
+  }
+  img {
     width: 100%;
     margin: 0;
     margin-bottom: 20px;
@@ -400,8 +413,9 @@ header .nav:active {
 }
 
 .skill_card img {
-  padding-top: 25px;
-  margin: auto;
+  width: 100px;
+  height: 100px;
+  margin: 25px auto 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -412,10 +426,10 @@ header .nav:active {
 
 @media screen and (max-width: 767px) {
   .container {
-    padding: 0;
+    padding: 0 20px;
   }
   .skill_list {
-    padding: 40px 30px;
+    padding: 20px 0 0;
   }
   .skill_card {
     width: 48%;
@@ -427,12 +441,6 @@ header .nav:active {
   background-repeat: no-repeat;
   background-position: 95% bottom;
   background-size: 42%;
-}
-
-@media screen and (max-width: 767px) {
-  .about_pic {
-    background-size: 80%;
-  }
 }
 
 .my_name {
@@ -466,6 +474,15 @@ header .nav:active {
   border-left: #a33fff 5px solid;
   display: inline-block;
   padding-left: 5px;
+}
+
+@media screen and (max-width: 767px) {
+  .about_pic {
+    background-size: 80%;
+  }
+  .profile {
+    padding-left: 0;
+  }
 }
 
 footer {
