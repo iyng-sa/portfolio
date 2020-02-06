@@ -309,7 +309,7 @@ header .nav:active {
 }
 
 @media screen and (max-width: 767px) {
-  .mypage_image, .admin_top, .musubuLp_top, .list_top,
+  .mypage_top, .admin_top, .musubuLp_top, .list_top,
   .nalc_top, .sky_top {
     height: 350px;
   }
@@ -362,7 +362,7 @@ header .nav:active {
 }
 
 @media screen and (max-width: 767px) {
-  .works_script {
+  .respectively_works, .works_script {
     padding: 0;
   }
   img {
