@@ -121,6 +121,12 @@ header .nav:active {
   color: #a33fff;
 }
 
+@media screen and (max-width: 767px) {
+  header .nav {
+    margin: 0 0 0 10px;
+  }
+}
+
 .top_pic {
   position: relative;
   background-image: url(./img/top.jpg);
@@ -139,9 +145,10 @@ header .nav:active {
   .top_pic {
     padding-top: 20%;
     background-size: 90%;
+    background-position: 95% 20%;
   }
   .top_description {
-    padding-top: 85%;
+    padding-top: 95%;
     font-size: 35px;
     padding-left: 20px;
     padding-bottom: 20px;
