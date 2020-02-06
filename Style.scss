@@ -139,6 +139,7 @@ header{
   margin: 30px 40px;
   text-align: center;
   line-height: 1;
+  color: #16161D;
   h3{
     background: linear-gradient(transparent 75%, #a0a0a0 20%);
     padding-bottom: 30px;
@@ -196,6 +197,8 @@ header{
   @media screen and (max-width: 767px) {
     ul{
       padding: 0;
+      display: flex;
+      justify-content: center;
       a li {
         width:300px;
         height:200px;
@@ -380,20 +383,24 @@ header{
 .about_pic {
   background-image: url(./img/about.jpg);
   background-repeat: no-repeat;
-  background-position: 95% bottom;
-  background-size: 42%;
+  background-position: 110% top;
+  background-size: 45%;
+  right: 0px;
 }
 .my_name{
   vertical-align: bottom;
+  display: flex;
   span{
     font-size: 30px;
   }
   p{
     padding-top: 12px;
     font-size: 20px;
+    margin-left: 20px;
   }
 }
 .profile{
+z-index: 1;
 text-align: left;
 padding-left:40px;
 margin-bottom: 60px;
@@ -410,12 +417,31 @@ margin-bottom: 60px;
     padding-left: 5px;
   }
 }
+.profile_others{
+  span{
+    margin-left: 10%;
+  }
+}
 @media screen and (max-width: 767px) {
+  .my_name{
+    flex-direction: column;
+    p{
+      margin-left: 0;
+    }
+  }
   .about_pic{
-    background-size: 80%;
+    background-size: 120%;
+    background-position: top;
   }
   .profile{
     padding-left:0;
+    padding-top: 650px
+  }
+  .profile_others{
+    flex-direction: column;
+    span{
+      margin-left: 0;
+    }
   }
 }
 // footer---------------------//
@@ -470,7 +496,7 @@ footer{
 }
 .column{
   display: flex;
-  justify-content: column;
+  flex-direction: column;
 }
 //margin-----------------------------------------//
 .mb-80{

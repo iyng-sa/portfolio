@@ -168,6 +168,7 @@ header .nav:active {
   margin: 30px 40px;
   text-align: center;
   line-height: 1;
+  color: #16161D;
 }
 
 .section_sub_title h3 {
@@ -244,6 +245,12 @@ header .nav:active {
 @media screen and (max-width: 767px) {
   .works ul {
     padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .works ul a li {
     width: 300px;
@@ -461,12 +468,16 @@ header .nav:active {
 .about_pic {
   background-image: url(./img/about.jpg);
   background-repeat: no-repeat;
-  background-position: 95% bottom;
-  background-size: 42%;
+  background-position: 110% top;
+  background-size: 45%;
+  right: 0px;
 }
 
 .my_name {
   vertical-align: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .my_name span {
@@ -476,9 +487,11 @@ header .nav:active {
 .my_name p {
   padding-top: 12px;
   font-size: 20px;
+  margin-left: 20px;
 }
 
 .profile {
+  z-index: 1;
   text-align: left;
   padding-left: 40px;
   margin-bottom: 60px;
@@ -498,12 +511,36 @@ header .nav:active {
   padding-left: 5px;
 }
 
+.profile_others span {
+  margin-left: 10%;
+}
+
 @media screen and (max-width: 767px) {
+  .my_name {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my_name p {
+    margin-left: 0;
+  }
   .about_pic {
-    background-size: 80%;
+    background-size: 120%;
+    background-position: top;
   }
   .profile {
     padding-left: 0;
+    padding-top: 650px;
+  }
+  .profile_others {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .profile_others span {
+    margin-left: 0;
   }
 }
 
@@ -583,9 +620,10 @@ footer p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: column;
-      -ms-flex-pack: column;
-          justify-content: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .mb-80 {
