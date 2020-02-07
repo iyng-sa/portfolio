@@ -84,45 +84,78 @@
 <section class="container">
 	<div class="respectively_works">
 		<h2>Baseconnect LIST(MUSUBU)</h2>
-		<p>「Baseconnect LIST 」は法人営業を支援する企業情報データベースです。<br>
-				2019年11月に「Baseconnect LIST」は「Musubu」に<a href="https://prtimes.jp/main/html/rd/p/000000008.000030679.html">リニューアルリリース</a>しました。</p>
+		<p>「Baseconnect LIST 」は情報収集やリスト作成、案件管理といった幅広い業務をサポートし、ユーザと新しい顧客を結ぶ法人営業支援データベースです。<br>
+			リリースから2年で約28,000社に導入されています。
+			2019年11月に「Baseconnect LIST」は「Musubu」に<a href="https://prtimes.jp/main/html/rd/p/000000008.000030679.html">リニューアルリリース</a>しました。</p>
 		<h3>URL</h3>
 		<p>
-			<a href="https://www.musubu.in/">https://www.musubu.in/</a>
+			<a href="https://app.musubu.in/sign_in">https://app.musubu.in/sign_in</a>
 		</p>
 		<h3>担当</h3>
 		<p>UIデザイン/コーディング（Sketch / React.js / SCSS）</p>
 		<hr class="dashed_60">
 
-		<h4>担当したUI</h4>
+		<h4>-「Musubu」開発プロジェクトへの参加 -</h4>
+		<h3>担当箇所</h3>
+		<p>
+			・UIデザイン、コーディング<br>
+			・モバイル対応<br>
+			・ローンチ後の機能改善<br>
+			・バージョンアップリリース準備<br>
+		</p>
+		<div class="center mt-40 mb-40">
+			<div class="pic_frame">
+				<img src="./img/works/baseconnect_list/kanban/案件-ボードビュー.png">
+			</div>
+			<div class="pic_frame">
+				<img src="./img/works/baseconnect_list/kanban/案件-ボードビュー-アクション-ドラッグ.png">
+			</div>
+		</div>
+		<div class="center mt-40 mb-40">
+			<div class="pic_frame">
+				<img src="./img/works/baseconnect_list/set_plan/共通-(新)プラン_年契約以外 after.png">
+			</div>
+			<div class="pic_frame">
+				<img src="./img/works/baseconnect_list/set_plan/共通-プラン-無制限プランからの変更-確認モーダル.png">
+			</div>
+		</div>
+		<h3>実際に担当した部分・参加プロジェクトの例</h3>
+		<p>
+			・企業検索/サイドバー、検索モーダルUI改善（UIデザイン、コーディング）<br>
+			・サーチキット脱却プロジェクト（UIデザイン、コーディング）<br>
+			・設定/アカウント情報、プラン変更、情報取得状況などのUI改善（UIデザインのみ）<br>
+			・案件管理/ボードビューUI改善（UIデザインのみ）<br>
+			・バグ修正（コーディング）<br>
+		</p>
+
+		<p class="mb-80">
+		</p>
+
+		<h4>Ex1.設定_プラン変更画面</h4>
 		<div class="center mt-40 mb-40">
 			<div class="pic_frame">
 				<h5>Before</h5>
-				<img src="./img/works/admin/企業アカウント一覧_before.png">
+				<img src="./img/works/admin/企業アカウント詳細_before.png">
 			</div>
 			<div class="pic_frame">
 				<h5>After</h5>
-				<img src="./img/works/admin/企業アカウント一覧_after.jpg">
+				<img src="./img/works/admin/企業アカウント詳細_after .jpg">
 			</div>
 		</div>
 		<h3>課題</h3>
 		<p>
-			企業アカウント一覧では最低限の情報しか見れず、社名をクリックしないと入金情報などが操作・閲覧できない。<br>
-			セレクトと検索ボタンとcsv出力ボタンが同じ行にあり分かりにくい。<br>
+			一つのカードに3列に分けてデータが記載されておりボタンとデータの関連性が分かりにくい。<br>
+			ボタンデザインが統一されておらずどのボタンがどんなニュアンスを持つか直感的に分かりにくい。<br>
 		</p>
 		<h3>UI改善</h3>
-		<p class="mb-40">
-			・アカウント一覧で入金状況が確認でき、必要な手続きもそのまま行えるようにした。背景に色を入れ重要性を強調。<br>
-			・最下部のページネイションの位置を中央に変更。<br>
-			・アイコン・タグ・ページネーションのパーツを自社製品のMUSUBUデザインに寄せ親近感を持って使ってもらえるようにした。<br>
-			・絞り込みのセレクトを増やし、セレクト・検索ボタン・csv出力ボタンを違う行に分け整列。<br>
-		</p>
 		<p class="mb-80">
-				コーディングではReact.jsとscssを使い、使用しているAnt.Desigのライブラリコンポーネントをそのまま使用しつつデザインスタイルや配列を変更しました。
-				またエンジニアがRedaxでデータを渡しやすいコーディングを心がけました。
+			・カード内の構成を2列にし変更ボタンがある項目は右に揃えるなどユーザが直感的に操作し変更が行えるようにした。<br>
+			・重要な項目はタグ付とカラーリングを行いユーザが直感的に項目を探せるようにした。<br>
+			・カードタイトルにバックグラウンドを入れ纏まりを持たせた。<br>
+			・変更ボタンは青、返金は赤などボタンの意味によってデザインを統一した。<br>
 		</p>
 
-		<h4>担当したコーディング</h4>
+		<h4>Ex2.案件管理_ボードビューUI改善</h4>
 		<div class="center mt-40 mb-40">
 			<div class="pic_frame">
 				<h5>Before</h5>
