@@ -105,7 +105,7 @@ header .title:hover {
 }
 
 header .nav {
-  margin: 10px;
+  margin: 20px;
   color: #16161D;
   -webkit-transition: border .3s,color .3s;
   transition: border .3s,color .3s;
