@@ -385,7 +385,7 @@ header .nav:active {
 
 .respectively_works a, .works_script a {
   text-decoration: underline;
-  color: #16161D;
+  color: #626265;
   font-weight: bold;
 }
 
@@ -580,13 +580,15 @@ footer p {
 .btn a {
   background: #a33fff;
   border-radius: 8px;
-  padding: 10px 20px;
+  padding: 10px 25px;
   color: #fff;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 .btn a i {
-  font-size: 16px;
-  padding-left: 5px;
+  font-size: 20px;
+  padding-right: 10px;
 }
 
 .btn :hover {
