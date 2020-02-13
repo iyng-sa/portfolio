@@ -586,11 +586,6 @@ footer p {
   text-decoration: none;
 }
 
-.btn a i {
-  font-size: 20px;
-  padding-right: 10px;
-}
-
 .btn :hover {
   opacity: 0.8;
 }
