@@ -431,7 +431,7 @@ margin-bottom: 60px;
 }
 .profile_others{
   span{
-    margin-left: 10%;
+    // margin-left: 10%;
   }
 }
 @media screen and (max-width: 767px) {
@@ -567,4 +567,14 @@ footer{
 }
 .co2{
   width:45%;
+}
+//アニメーション--------------------------------------------//
+.fadein {
+	opacity : 0.1;
+	transform : translate(0, 30px);
+	transition : all 2500ms;
+}
+.fadein.scrollin {
+	opacity : 1;
+	transform : translate(0, 0);
 }

@@ -522,10 +522,6 @@ header .nav:active {
   padding-left: 5px;
 }
 
-.profile_others span {
-  margin-left: 10%;
-}
-
 @media screen and (max-width: 767px) {
   .my_name {
     -webkit-box-orient: vertical;
@@ -708,5 +704,19 @@ footer p {
 
 .co2 {
   width: 45%;
+}
+
+.fadein {
+  opacity: 0.1;
+  -webkit-transform: translate(0, 30px);
+          transform: translate(0, 30px);
+  -webkit-transition: all 2500ms;
+  transition: all 2500ms;
+}
+
+.fadein.scrollin {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 /*# sourceMappingURL=Style.css.map */

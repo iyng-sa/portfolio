@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<!-- スムーズスクロール部分の記述 -->
 <script>
+// <!-- スムーズスクロール部分の記述 -->
 	$(function(){
 			// #で始まるアンカーをクリックした場合に処理
 		$('a[href^=#]').click(function() {
@@ -31,6 +31,19 @@
 			return false;
 		});
 	});
+// <!--fadeinアニメーション部分の記述-->
+$(function(){
+	$(window).scroll(function (){
+		$('.fadein').each(function(){
+			var elemPos = $(this).offset().top;
+			var scroll = $(window).scrollTop();
+			var windowHeight = $(window).height();
+			if (scroll > elemPos - windowHeight + 200){
+				$(this).addClass('scrollin');
+			}
+		});
+	});
+});
 </script>
 </head>
 
@@ -49,7 +62,7 @@
 	</div>
 </header>
 
-<div class="top_pic">
+<div class="top_pic fadein">
 <section class="container">
 	<article>
 		<div class="top_description">
@@ -60,7 +73,7 @@
 </section>
 </div>
 
-<section  id="works" class="works container">
+<section  id="works" class="works container fadein">
 	<article>
 		<h2 class="section_title">WORKS</h2>
 		<div class="section_sub_title">
@@ -73,7 +86,7 @@
 		</p>
 		<ul class="mt-60">
 
-			<a href="./works_admin.html">
+			<a href="./works_admin.html" class="fadein">
 				<li>
 						<img src="img/works/admin.png"/>
 				</li>
@@ -83,7 +96,7 @@
 				</div>
 			</a>
 
-			<a href="./works_list.html">
+			<a href="./works_list.html" class="fadein">
 				<li>
 						<img src="img/works/list.png"/>
 				</li>
@@ -93,7 +106,7 @@
 				</div>
 			</a>
 
-			<a href="./works_musubu.html">
+			<a href="./works_musubu.html" class="fadein">
 				<li>
 						<img src="img/works/musubu_lp.png"/>
 				</li>
@@ -125,7 +138,7 @@
 
 	<hr class="dashed"/>
 
-	<article>
+	<article class="fadein">
 		<div class="section_sub_title">
 			<h3>G.O Holdings Inc.</h3>
 			<p>2018/12 - 2019/5</p>
@@ -134,7 +147,7 @@
 			自社開発商品されたコスメブランドやガジェット系ブランド商品の販促物、LP制作を担当。
 		</p>
 			<ul class="mt-60">
-				<a href="./works_sky.html">
+				<a href="./works_sky.html" class="fadein">
 					<li>
 							<img src="img/works/sky.png"/>
 					</li>
@@ -145,7 +158,7 @@
 				</a>
 
 
-				<a href="./works_nalc.html">
+				<a href="./works_nalc.html" class="fadein">
 					<li>
 							<img src="img/works/nalc.png"/>
 					</li>
@@ -168,14 +181,14 @@
 
 	<hr class="dashed"/>
 
-	<article>
+	<article class="fadein">
 		<div class="section_sub_title">
 			<h3>Others</h3>
 			<p>-</p>
 		</div>
 
 		<ul class="mt-60 mb-40">
-			<a href="./works_portfolio.html">
+			<a href="./works_portfolio.html" class="fadein">
 				<li>
 						<img src="img/works/mypage.png"/>
 				</li>
@@ -197,12 +210,11 @@
 
 </section>
 
-<div class="skills">
-	<section class="container">
+<div class="skills fadein">
+	<section class="container fadein">
 		<article>
 			<h2 class="section_title">SKILLS</h2>
 			<div class="skill_list">
-
 				<div class="skill_card">
 					<img src="img/skills/html5.png"/>
 					<p>HTML5</p>
@@ -252,10 +264,10 @@
 	</section>
 </div>
 
-	<section id="about" class="container">
+	<section id="about" class="container fadein">
 		<article>
 			<h2 class="section_title mt-40">ABOUT</h2>
-			<div class="about_pic">
+			<div class="about_pic fadein">
 				<div class="profile">
 					<div class="my_name mb-30">
 						<span class="">彌永沙也加</span>
@@ -272,7 +284,7 @@
 						コーディングを勉強したいという思いからBaseconnect株式会社のBootcampに参加。<br/><br/>
 						2018年6月〜現在<br/>
 						Baseconnect株式会社のフルタイムインターンとしてUIデザイナー・コーダーとして従事。<br/>
-					<div class="profile_others flex">
+					<div class="profile_others">
 						<div class="mb-20 mt-60">
 							<h4>MY HOBBY & FAVORITE</h4>
 							<p>
@@ -285,8 +297,8 @@
 						<span class="mb-20 mt-60">
 							<h4>今後やりたいことなど</h4>
 							<p>
-								-React.jsなどフレームワークの知識を深める<br/>
-								-UX/UIデザインの知識を深める<br/>
+								-フロントエンドの知識をさらに深め、UX/UI/フロントエンドなど多岐にわたるデザインをこなせるデザイナーになる。<br/>
+								-ユーザが直感的に理解でき生活を豊かにできるようなサービス・デザインを作りたいです。<br/>
 							</p>
 						</span>
 					</div>
