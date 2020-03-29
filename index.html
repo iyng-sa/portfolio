@@ -31,6 +31,14 @@
 			return false;
 		});
 	});
+// ナビゲーション選択後色変化
+	$(function(){
+		var btn = $('header .nav');
+		btn.click(function(){
+			btn.removeClass('selected');
+			$(this).addClass('selected');
+		});
+	});
 // <!--fadeinアニメーション部分の記述-->
 $(function(){
 	$(window).scroll(function (){
@@ -38,7 +46,7 @@ $(function(){
 			var elemPos = $(this).offset().top;
 			var scroll = $(window).scrollTop();
 			var windowHeight = $(window).height();
-			if (scroll > elemPos - windowHeight + 200){
+			if (scroll > elemPos - windowHeight + 300){
 				$(this).addClass('scrollin');
 			}
 		});
@@ -284,7 +292,7 @@ $(function(){
 						コーディングを勉強したいという思いからBaseconnect株式会社のBootcampに参加。<br/><br/>
 						2018年6月〜現在<br/>
 						Baseconnect株式会社のフルタイムインターンとしてUIデザイナー・コーダーとして従事。<br/>
-					<div class="profile_others">
+					<div>
 						<div class="mb-20 mt-60">
 							<h4>MY HOBBY & FAVORITE</h4>
 							<p>

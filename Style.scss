@@ -87,9 +87,9 @@ header{
     transition: border .3s,color .3s;
     border-bottom: 3px solid transparent;
     &:hover{
-      border-bottom-color: #a33fff;
+      color: #a33fff;
     }
-    &:active{
+    &.selected {
       border-bottom-color: #a33fff;
       color: #a33fff;
     }
@@ -112,6 +112,7 @@ header{
   background-repeat: no-repeat;
   background-position: 95% 10%;
   background-size: 55%;
+  transition: 2ms
 }
 .top_description{
   font-size:45px;
@@ -429,11 +430,6 @@ margin-bottom: 60px;
     padding-left: 5px;
   }
 }
-.profile_others{
-  span{
-    // margin-left: 10%;
-  }
-}
 @media screen and (max-width: 767px) {
   .my_name{
     flex-direction: column;
@@ -572,7 +568,7 @@ footer{
 .fadein {
 	opacity : 0.1;
 	transform : translate(0, 30px);
-	transition : all 2500ms;
+	transition : all 1800ms;
 }
 .fadein.scrollin {
 	opacity : 1;

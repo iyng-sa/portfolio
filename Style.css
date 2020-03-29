@@ -113,10 +113,10 @@ header .nav {
 }
 
 header .nav:hover {
-  border-bottom-color: #a33fff;
+  color: #a33fff;
 }
 
-header .nav:active {
+header .nav.selected {
   border-bottom-color: #a33fff;
   color: #a33fff;
 }
@@ -136,6 +136,8 @@ header .nav:active {
   background-repeat: no-repeat;
   background-position: 95% 10%;
   background-size: 55%;
+  -webkit-transition: 2ms;
+  transition: 2ms;
 }
 
 .top_description {
@@ -710,8 +712,8 @@ footer p {
   opacity: 0.1;
   -webkit-transform: translate(0, 30px);
           transform: translate(0, 30px);
-  -webkit-transition: all 2500ms;
-  transition: all 2500ms;
+  -webkit-transition: all 1800ms;
+  transition: all 1800ms;
 }
 
 .fadein.scrollin {
