@@ -12,6 +12,8 @@
 <link rel='stylesheet' href='./style.css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
+<link rel="stylesheet" href="magnific-popup.css">
+<script src="jquery.magnific-popup.min.js"></script>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <!-- スムーズスクロール部分の記述 -->
 <script>
@@ -31,6 +33,11 @@
 			return false;
 		});
 	});
+// ポップアップ画像
+$('.popup-link').magnificPopup({
+  delegate: 'a',
+  type: 'image'
+});
 </script>
 </head>
 
@@ -91,7 +98,7 @@
 		<hr class="dashed_60">
 
 		<h4>１. 企業アカウント一覧</h4>
-		<div class="center mt-40 mb-40">
+		<div class="center mt-40 mb-40 popup-link">
 			<div class="pic_frame">
 				<h5>Before</h5>
 				<img src="./img/works/admin/企業アカウント一覧_before.png">
@@ -119,14 +126,18 @@
 		</p>
 
 		<h4>２. 企業アカウント詳細</h4>
-		<div class="center mt-40 mb-40">
+		<div class="center mt-40 mb-40  popup-link">
 			<div class="pic_frame">
 				<h5>Before</h5>
-				<img src="./img/works/admin/企業アカウント詳細_before.png">
+				<a href="./img/works/admin/企業アカウント詳細_before.png" title="企業アカウント詳細_Before">
+					<img src="./img/works/admin/企業アカウント詳細_before.png">
+				</a>
 			</div>
 			<div class="pic_frame">
 				<h5>After</h5>
-				<img src="./img/works/admin/企業アカウント詳細_after .jpg">
+				<a href="./img/works/admin/企業アカウント詳細_after .jpg" title="企業アカウント詳細_After">
+					<img src="./img/works/admin/企業アカウント詳細_after .jpg">
+				</a>
 			</div>
 		</div>
 		<h3>課題</h3>
@@ -143,7 +154,7 @@
 		</p>
 
 		<h4>３. 削除確認アラート</h4>
-		<div class="center mt-40 mb-40">
+		<div class="center mt-40 mb-40  popup-link">
 			<div class="pic_frame">
 				<h5>Before</h5>
 				<img src="./img/works/admin/削除確認_before.png">
