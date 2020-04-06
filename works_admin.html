@@ -13,8 +13,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
 <link rel="stylesheet" href="magnific-popup.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="jquery.magnific-popup.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 <!-- スムーズスクロール部分の記述 -->
 <script>
 	$(function(){
@@ -34,9 +34,11 @@
 		});
 	});
 // ポップアップ画像
-$('.popup-link').magnificPopup({
-  delegate: 'a',
-  type: 'image'
+$(function(){
+  $('.popup-image').magnificPopup({
+		type: 'image',
+		overflowY: 'auto'
+  });
 });
 </script>
 </head>
@@ -101,11 +103,16 @@ $('.popup-link').magnificPopup({
 		<div class="center mt-40 mb-40 popup-link">
 			<div class="pic_frame">
 				<h5>Before</h5>
-				<img src="./img/works/admin/企業アカウント一覧_before.png">
+				<a href="./img/works/admin/企業アカウント一覧_before.png" class="popup-image"title="企業アカウント一覧_Before">
+					<img src="./img/works/admin/企業アカウント一覧_before.png">
+				</a>
 			</div>
+
 			<div class="pic_frame">
 				<h5>After</h5>
-				<img src="./img/works/admin/企業アカウント一覧_after.jpg">
+				<a href="./img/works/admin/企業アカウント一覧_after.jpg" class="popup-image"title="企業アカウント一覧_After">
+					<img src="./img/works/admin/企業アカウント一覧_after.jpg">
+				</a>
 			</div>
 		</div>
 		<h3>課題</h3>
@@ -126,16 +133,16 @@ $('.popup-link').magnificPopup({
 		</p>
 
 		<h4>２. 企業アカウント詳細</h4>
-		<div class="center mt-40 mb-40  popup-link">
+		<div class="center mt-40 mb-40">
 			<div class="pic_frame">
 				<h5>Before</h5>
-				<a href="./img/works/admin/企業アカウント詳細_before.png" title="企業アカウント詳細_Before">
+				<a href="./img/works/admin/企業アカウント詳細_before.png" class="popup-image"title="企業アカウント詳細_Before">
 					<img src="./img/works/admin/企業アカウント詳細_before.png">
 				</a>
 			</div>
 			<div class="pic_frame">
 				<h5>After</h5>
-				<a href="./img/works/admin/企業アカウント詳細_after .jpg" title="企業アカウント詳細_After">
+				<a href="./img/works/admin/企業アカウント詳細_after .jpg" class="popup-image" title="企業アカウント詳細_After">
 					<img src="./img/works/admin/企業アカウント詳細_after .jpg">
 				</a>
 			</div>
@@ -154,14 +161,18 @@ $('.popup-link').magnificPopup({
 		</p>
 
 		<h4>３. 削除確認アラート</h4>
-		<div class="center mt-40 mb-40  popup-link">
+		<div class="center mt-40 mb-40">
 			<div class="pic_frame">
 				<h5>Before</h5>
-				<img src="./img/works/admin/削除確認_before.png">
+				<a href="./img/works/admin/削除確認_before.png" class="popup-image"title="削除確認アラート_Before">
+					<img src="./img/works/admin/削除確認_before.png">
+				</a>
 			</div>
 			<div class="pic_frame">
 				<h5>After</h5>
-				<img src="./img/works/admin/削除確認_after.png">
+				<a href="./img/works/admin/削除確認_after.png" class="popup-image"title="削除確認アラート_After">
+					<img src="./img/works/admin/削除確認_after.png">
+				</a>
 			</div>
 		</div>
 		<h3>課題</h3>
