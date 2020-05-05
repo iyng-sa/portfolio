@@ -12,7 +12,9 @@
 <link rel='stylesheet' href='./style.css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<link rel="stylesheet" href="./magnific-popup.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="./jquery.magnific-popup.min.js"></script>
 <!-- スムーズスクロール部分の記述 -->
 <script>
 	$(function(){
@@ -31,6 +33,13 @@
 			return false;
 		});
 	});
+// ポップアップ画像
+$(function(){
+  $('.popup-image').magnificPopup({
+		type: 'image',
+		overflowY: 'auto'
+  });
+});
 </script>
 </head>
 
@@ -83,87 +92,113 @@
 </div>
 <section class="container">
 	<div class="respectively_works">
-		<h2>NALC 販促物</h2>
-		<p>ユニセックスコスメNALCのポスターや販促物（ボックスやポップ）のデザイン・入稿を担当しました。</p>
+		<h2>NALC・NULL 販促物</h2>
+		<p>ユニセックスコスメNALCやメンズコスメNULLのポスターや販促物（ボックスやポップ）のデザイン・入稿を担当しました。</p>
 		<h3>担当</h3>
 		<p>DTPデザイン・入稿（IllustratorCC / PhotoshopCC / 一部写真撮影）</p>
-		<!-- <hr class="dashed_60">
+		<hr class="dashed_60">
 
-		<h4>１. 企業アカウント一覧</h4>
+		<h4>1. NALC 什器</h4>
+		<div class="center mt-40 mb-40 column">
+			<div class="pic_frame">
+				<a href="img/works/go_dtp/店頭.jpg" class="popup-image" title="店頭写真"　style="width: 40%">
+					<img src="./img/works/go_dtp/店頭.jpg">
+				</a>
+			</div>
+			<p class="right_gray">店頭での写真</p>
+
+			<div class="flex">
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/日本向け_正面写真.png" class="popup-image" title="什器ボックス正面">
+						<img src="./img/works/go_dtp/日本向け_正面写真.png">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/日本向け_右.png" class="popup-image" title="什器ボックス右">
+						<img src="./img/works/go_dtp/日本向け_右.png">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/日本向け_左.png" class="popup-image" title="什器ボックス左">
+						<img src="./img/works/go_dtp/日本向け_左.png">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/海外向け_正面.png" class="popup-image" title="什器ボックス正面">
+						<img src="./img/works/go_dtp/海外向け_正面.png">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/海外向け_右.png" class="popup-image" title="什器ボックス右">
+						<img src="./img/works/go_dtp/海外向け_右.png">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/海外向け_左.png" class="popup-image" title="什器ボックス左">
+						<img src="./img/works/go_dtp/海外向け_左.png">
+					</a>
+				</div>
+			</div>
+			<p class="right_gray">実際の写真</p>
+
+
+			<div class="flex">
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/什器完成図(日本向け).jpg" class="popup-image" title="日本向け什器ボックス完成図">
+						<img src="./img/works/go_dtp/什器完成図(日本向け).jpg">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/什器完成図(日本向け)_前.jpg" class="popup-image" title="日本向け什器ボックス完成図(前)">
+						<img src="./img/works/go_dtp/什器完成図(日本向け)_前.jpg">
+					</a>
+				</div>
+				<div class="pic_frame">
+						<a href="img/works/go_dtp/什器完成図(海外向け).jpg" class="popup-image" title="海外向け什器ボックス完成図">
+							<img src="./img/works/go_dtp/什器完成図(海外向け).jpg">
+						</a>
+					</div>
+					<div class="pic_frame">
+						<a href="img/works/go_dtp/什器完成図(海外向け)_前 1.jpg" class="popup-image" title="海外向け什器ボックス完成図(前)">
+							<img src="./img/works/go_dtp/什器完成図(海外向け)_前 1.jpg">
+						</a>
+					</div>
+			</div>
+
+			<p class="right_gray mt-20">企画書のため作成した什器ボックス完成図(クリックで拡大)</p>
+		</div>
+
+		<h4>2. NULL 店頭用ポスター</h4>
 		<div class="center mt-40 mb-40">
 			<div class="pic_frame">
-				<h5>Before</h5>
-				<img src="./img/works/admin/企業アカウント一覧_before.png">
-			</div>
-			<div class="pic_frame">
-				<h5>After</h5>
-				<img src="./img/works/admin/企業アカウント一覧_after.jpg">
+				<a href="img/works/go_dtp/poster_null.jpg" class="popup-image" title="NULL 店頭用ポスター">
+				<img src="./img/works/go_dtp/poster_null.jpg">
+				</a>
+				<p class="right_gray">size:2000×1000</p>
 			</div>
 		</div>
-		<h3>課題</h3>
-		<p>
-			企業アカウント一覧では最低限の情報しか見れず、社名をクリックしないと入金情報などが操作・閲覧できない。<br>
-			セレクトと検索ボタンとcsv出力ボタンが同じ行にあり分かりにくい。<br>
-		</p>
-		<h3>UI改善</h3>
-		<p class="mb-40">
-			・アカウント一覧で入金状況が確認でき、必要な手続きもそのまま行えるようにした。背景に色を入れ重要性を強調。<br>
-			・最下部のページネイションの位置を中央に変更。<br>
-			・アイコン・タグ・ページネーションのパーツを自社製品のMUSUBUデザインに寄せ親近感を持って使ってもらえるようにした。<br>
-			・絞り込みのセレクトを増やし、セレクト・検索ボタン・csv出力ボタンを違う行に分け整列。<br>
-		</p>
-		<p class="mb-80">
-				コーディングではReact.jsとscssを使い、使用しているAnt.Desigのライブラリコンポーネントをそのまま使用しつつデザインスタイルや配列を変更しました。
-				またエンジニアがRedaxでデータを渡しやすいコーディングを心がけました。
-		</p>
 
-		<h4>２. 企業アカウント詳細</h4>
-		<div class="center mt-40 mb-40">
-			<div class="pic_frame">
-				<h5>Before</h5>
-				<img src="./img/works/admin/企業アカウント詳細_before.png">
+		<h4>3. SNSでの告知画像</h4>
+		<div class="center mt-40 mb-40 column">
+			<div class="flex">
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/nalc_insta.jpg" class="popup-image" title="NALC キャンペーン告知画像">
+						<img src="./img/works/go_dtp/nalc_insta.jpg">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/null_sale_insta.jpg" class="popup-image" title="NULL SALE告知画像">
+						<img src="./img/works/go_dtp/null_sale_insta.jpg">
+					</a>
+				</div>
+				<div class="pic_frame">
+					<a href="img/works/go_dtp/null_sale2_insta.jpg" class="popup-image" title="NULL SALE告知画像2">
+						<img src="./img/works/go_dtp/null_sale2_insta.jpg">
+					</a>
+				</div>
 			</div>
-			<div class="pic_frame">
-				<h5>After</h5>
-				<img src="./img/works/admin/企業アカウント詳細_after .jpg">
-			</div>
+			<p class="right_gray mt-20">instagram公式アカウントにて投稿したセール・キャンペーン告知画像</p>
 		</div>
-		<h3>課題</h3>
-		<p>
-			一つのカードに3列に分けてデータが記載されておりボタンとデータの関連性が分かりにくい。<br>
-			ボタンデザインが統一されておらずどのボタンがどんなニュアンスを持つか直感的に分かりにくい。<br>
-		</p>
-		<h3>UI改善</h3>
-		<p class="mb-80">
-			・カード内の構成を2列にし変更ボタンがある項目は右に揃えるなどユーザが直感的に操作し変更が行えるようにした。<br>
-			・重要な項目はタグ付とカラーリングを行いユーザが直感的に項目を探せるようにした。<br>
-			・カードタイトルにバックグラウンドを入れ纏まりを持たせた。<br>
-			・変更ボタンは青、返金は赤などボタンの意味によってデザインを統一した。<br>
-		</p>
-
-		<h4>３. 削除確認アラート</h4>
-		<div class="center mt-40 mb-40">
-			<div class="pic_frame">
-				<h5>Before</h5>
-				<img src="./img/works/admin/削除確認_before.png">
-			</div>
-			<div class="pic_frame">
-				<h5>After</h5>
-				<img src="./img/works/admin/削除確認_after.png">
-			</div>
-		</div>
-		<h3>課題</h3>
-		<p>
-			使用しているライブラリ(Ant.Desig)のコンポーネントをデザイン調整なしで使用しているため、
-			アイコン・文言・ボタンのUIに違和感がある。<br>
-		</p>
-		<h3>UI改善</h3>
-		<p>
-			・既存のアイコンではユーザにデータが削除される危険性をあまり伝えられていないと考え、アイコンとアイコンカラーを変更。<br>
-			・削除実行のボタンをアラート感のあるものに変更。アイコンを追加しユーザがボタンを押すことで何が起こるのか視覚的に分かりやすくした。<br>
-			・削除ボタンのデザインが統一されておらず分かりにくかったのですべて統一。<br>
-			・モーダルの2文めの語尾がなくバグのような印象を受けるので「が削除されます」を追加。<br>
-		</p> -->
 	</div>
 
 		<div class="btn center">
