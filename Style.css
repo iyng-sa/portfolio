@@ -588,6 +588,13 @@ footer p {
   opacity: 0.8;
 }
 
+.backBtn::before {
+  /* <を表示*/
+  font-family: FontAwesome;
+  content: '\f053';
+  margin-right: 10px;
+}
+
 .center {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -682,6 +689,10 @@ footer p {
 
 .mb-10 {
   margin-bottom: 10px;
+}
+
+.mr-10 {
+  margin-right: 10px;
 }
 
 .mt-10 {

@@ -483,6 +483,13 @@ footer{
     opacity: 0.8;
   }
 }
+.backBtn{
+  &::before {/* <を表示*/
+    font-family: FontAwesome;
+    content: '\f053';
+    margin-right: 10px;
+  }
+}
 //laiout-----------------------------------------//
 .center{
   display: flex;
@@ -543,6 +550,9 @@ footer{
 }
 .mb-10{
   margin-bottom: 10px;
+}
+.mr-10{
+  margin-right: 10px;
 }
 .mt-10{
   margin-top: 10px;
