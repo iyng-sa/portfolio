@@ -12,7 +12,10 @@
 <link rel='stylesheet' href='./style.css'>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 <link href="https://fonts.googleapis.com/css?family=Alata" rel="stylesheet">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script> -->
+<link rel="stylesheet" href="./magnific-popup.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script src="./jquery.magnific-popup.min.js"></script>
 <!-- スムーズスクロール部分の記述 -->
 <script>
 	$(function(){
@@ -31,6 +34,13 @@
 			return false;
 		});
 	});
+// ポップアップ画像
+$(function(){
+  $('.popup-image').magnificPopup({
+		type: 'image',
+		overflowY: 'auto'
+  });
+});
 </script>
 </head>
 
