@@ -353,6 +353,10 @@ header .nav.selected {
   padding: 0 40px;
 }
 
+.respectively_works .solid, .works_script .solid {
+  border: 1px solid #c9c9c9;
+}
+
 .respectively_works img, .works_script img {
   position: relative;
   margin-top: 0;

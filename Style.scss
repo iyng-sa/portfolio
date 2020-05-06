@@ -293,6 +293,9 @@ header{
 .respectively_works,.works_script{
   margin-bottom:80px;
   padding: 0 40px;
+  .solid{
+    border: 1px solid #c9c9c9;
+  }
   img{
     position: relative;
     margin-top: 0;
