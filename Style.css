@@ -366,6 +366,18 @@ header .nav.selected {
   border: 1px solid #c9c9c9;
 }
 
+.respectively_works .mock, .works_script .mock {
+  border-radius: 8px;
+  width: 60%;
+}
+
+.respectively_works .subtitle, .works_script .subtitle {
+  font-size: 20px;
+  border-left: 10px solid #a33fff;
+  padding-left: 10px;
+  margin: 40px 0;
+}
+
 .respectively_works img, .works_script img {
   position: relative;
   margin-top: 0;
@@ -415,6 +427,7 @@ header .nav.selected {
   }
   img {
     width: 100%;
+    height: auto;
     margin: 0;
     margin-bottom: 20px;
     display: -webkit-box;
